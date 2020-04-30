@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PaintIn3D/InGame/Examples/02 Seam Fixer.unity
+    guid: f709d3c2ef3f8d44fbf839140d843dc6
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 32c3dc1d4aea4f643a73206340a6b739,
+      type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: c9423ff841070184ab44431d5900f019,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 43792619f67b8c84986df170ce3e9847,
+      type: 2}
