@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/PaintIn3D/InGame/Examples/02 Seam Fixer.unity
-    guid: f709d3c2ef3f8d44fbf839140d843dc6
+    path: Assets/Veggie/Scenes/MainMenu.unity
+    guid: 021584da728503145a2492557b6cf741
+  - enabled: 1
+    path: Assets/Veggie/Scenes/PickingItem.unity
+    guid: e68d50f13835bd843ae580dfcee2b79b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 32c3dc1d4aea4f643a73206340a6b739,
       type: 2}
