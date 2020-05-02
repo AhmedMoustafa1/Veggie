@@ -77,7 +77,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 7959781448100360907}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6603423226236855401}
-  m_Mesh: {fileID: 8108636640639896579, guid: b0deb869e42dcff4c99fb0d5d1b8b4c2, type: 3}
+  m_Mesh: {fileID: 1934808953768222441, guid: 3ab92b186ffe97d45a28b354d191edfc, type: 2}
 --- !u!23 &7380474717807983379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -208,11 +208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 938201193653538818}
     m_Modifications:
-    - target: {fileID: 4125771684161083832, guid: 10982894d9f8b8942a97b7b9a3c3c67b,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire pots
-      objectReference: {fileID: 0}
     - target: {fileID: 1088453444825492395, guid: 10982894d9f8b8942a97b7b9a3c3c67b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -282,6 +277,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125771684161083832, guid: 10982894d9f8b8942a97b7b9a3c3c67b,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire pots
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359356583260206908, guid: 10982894d9f8b8942a97b7b9a3c3c67b,
+        type: 3}
+      propertyPath: saveName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10982894d9f8b8942a97b7b9a3c3c67b, type: 3}
