@@ -15,6 +15,7 @@ public class DrawableInfo
     public string name;
     public GameObject model;
     public bool locked;
+    public string saveName;
     public int id;
 }
 

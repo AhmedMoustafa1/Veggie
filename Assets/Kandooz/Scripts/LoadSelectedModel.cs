@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PaintIn3D;
 
 public class LoadSelectedModel : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class LoadSelectedModel : MonoBehaviour
 
         var currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.position = loadingPosition.position;
+        currentModel.GetComponent<P3dPaintableTexture>().SaveName = myDrawables.drawables[drawableIndex].saveName;
     }
 
 
@@ -30,5 +32,7 @@ public class LoadSelectedModel : MonoBehaviour
         }
         return 0;
     }
+
+
     
 }
