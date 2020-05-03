@@ -1,17 +1,18 @@
-﻿using System.Collections;
+﻿using Kandooz;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LoadSelectedModel : MonoBehaviour
 {
-    public int selectedID;
+    public IntField selectedID;
     public Drawables myDrawables;
     public Transform loadingPosition;
 
     void Start()
     {
 
-        int drawableIndex = FindModel(selectedID);
+        int drawableIndex = FindModel(selectedID.Value);
 
         var currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.position = loadingPosition.position;
