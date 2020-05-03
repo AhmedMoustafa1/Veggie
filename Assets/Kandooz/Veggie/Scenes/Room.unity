@@ -1149,6 +1149,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5,
+        type: 3}
+      propertyPath: m_Name
+      value: Burger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5,
+        type: 3}
+      propertyPath: m_TagString
+      value: selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 12375678179701523, guid: d8eac485a244c4e488b003bf72e94cc5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1204,16 +1214,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5,
-        type: 3}
-      propertyPath: m_Name
-      value: Burger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5,
-        type: 3}
-      propertyPath: m_TagString
-      value: selectable
-      objectReference: {fileID: 0}
     - target: {fileID: 3260496854465586683, guid: d8eac485a244c4e488b003bf72e94cc5,
         type: 3}
       propertyPath: saveName
@@ -1227,20 +1227,57 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7182542461690847368}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5221766809397472093
-MeshCollider:
+--- !u!114 &5221766809397472093
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5221766809397472092}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: 3da7608662c59ca489a67deb4bf7a168, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5b9e8ed54a5664190609102eb3eafa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnSelected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5221766809397472094}
+        m_MethodName: Highlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: c699396367462aa42919cf9b0a81aa6e, type: 2}
+        m_MethodName: set_Value
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 4
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDeSelected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5221766809397472094}
+        m_MethodName: UnHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5221766809397472094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,6 +1298,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793,
+        type: 3}
+      propertyPath: m_Name
+      value: Football
+      objectReference: {fileID: 0}
+    - target: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793,
+        type: 3}
+      propertyPath: m_TagString
+      value: selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 3747651300636796864, guid: 6423eb512c819f143a5bf0de6ee5b793,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1316,16 +1363,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793,
-        type: 3}
-      propertyPath: m_Name
-      value: Football
-      objectReference: {fileID: 0}
-    - target: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793,
-        type: 3}
-      propertyPath: m_TagString
-      value: selectable
-      objectReference: {fileID: 0}
     - target: {fileID: 5143171531930935267, guid: 6423eb512c819f143a5bf0de6ee5b793,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1345,6 +1382,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3160107947039755220, guid: 338f0fce17edc4d4f913201a0fbdbf91,
+        type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160107947039755220, guid: 338f0fce17edc4d4f913201a0fbdbf91,
+        type: 3}
+      propertyPath: m_TagString
+      value: selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 2730089392920973154, guid: 338f0fce17edc4d4f913201a0fbdbf91,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1399,16 +1446,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3160107947039755220, guid: 338f0fce17edc4d4f913201a0fbdbf91,
-        type: 3}
-      propertyPath: m_Name
-      value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 3160107947039755220, guid: 338f0fce17edc4d4f913201a0fbdbf91,
-        type: 3}
-      propertyPath: m_TagString
-      value: selectable
       objectReference: {fileID: 0}
     - target: {fileID: 3390256683265770103, guid: 338f0fce17edc4d4f913201a0fbdbf91,
         type: 3}
@@ -1578,17 +1615,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMat: {fileID: 2100000, guid: 89c77de17d9fd3646a12baf919db9195, type: 2}
---- !u!64 &8491427459349133720
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8491427459349133717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: 443fcb03c959e1546807751a77348460, type: 3}
