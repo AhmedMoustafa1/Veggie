@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e69eb9ef6e7854409944e6f5ed5a1ee, type: 3}
   m_Name: CurrentDrawable
   m_EditorClassIdentifier: 
-  value: 5
+  modelName: Burger

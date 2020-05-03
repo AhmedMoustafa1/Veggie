@@ -16,7 +16,6 @@ public class DrawableInfo
     public GameObject model;
     public bool locked;
     public string saveName;
-    public int id;
 }
 
 [System.Serializable]

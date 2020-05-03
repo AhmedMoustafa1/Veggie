@@ -31,17 +31,17 @@ MonoBehaviour:
   - name: ball
     model: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793, type: 3}
     locked: 0
-    saveName: football
+    saveName: Football
     id: 4
   - name: Car
     model: {fileID: 3160107947039755220, guid: 338f0fce17edc4d4f913201a0fbdbf91, type: 3}
     locked: 0
-    saveName: 
+    saveName: Car
     id: 5
   - name: Burger
     model: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5, type: 3}
     locked: 0
-    saveName: 
+    saveName: Burger
     id: 6
   - name: Bicycle
     model: {fileID: 5645446298481985538, guid: a05f3e3b2df997c4ea32e8d1e1c22e96, type: 3}

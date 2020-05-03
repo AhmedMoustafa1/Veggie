@@ -16,6 +16,7 @@ public class Selectable : MonoBehaviour
     public void Select()
     {
         OnSelected.Invoke();
+
     }
    public void DeSelect()
     {
