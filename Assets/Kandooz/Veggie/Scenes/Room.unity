@@ -1214,6 +1214,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: selectable
       objectReference: {fileID: 0}
+    - target: {fileID: 3260496854465586683, guid: d8eac485a244c4e488b003bf72e94cc5,
+        type: 3}
+      propertyPath: saveName
+      value: Burger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8eac485a244c4e488b003bf72e94cc5, type: 3}
 --- !u!1 &5221766809397472092 stripped
@@ -1326,6 +1331,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5f671846b85427b4c96e8083b3cddbd8, type: 2}
+    - target: {fileID: 6856064623138152342, guid: 6423eb512c819f143a5bf0de6ee5b793,
+        type: 3}
+      propertyPath: saveName
+      value: Football
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6423eb512c819f143a5bf0de6ee5b793, type: 3}
 --- !u!1001 &7182542461690847368
