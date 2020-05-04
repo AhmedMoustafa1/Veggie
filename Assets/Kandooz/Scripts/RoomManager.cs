@@ -10,7 +10,7 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
-        SetData();
+        //SetData();
     }
 
     void SetData()
@@ -29,8 +29,6 @@ public class RoomManager : MonoBehaviour
             if (roomModels[i].GetComponent<P3dPaintableTexture>() == null)
                 roomModels[i].AddComponent<P3dPaintableTexture>();
 
-            Debug.Log(modelIndex);
-            Debug.Log(myDrawables.drawables[modelIndex].name);
             roomModels[i].GetComponent<P3dPaintableTexture>().SaveName = myDrawables.drawables[modelIndex].saveName;
 
             if (roomModels[i].GetComponent<P3dMaterialCloner>() == null)

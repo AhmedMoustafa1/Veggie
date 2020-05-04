@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 3747651300636796864}
   - component: {fileID: 4486312604724654867}
   - component: {fileID: 5143171531930935267}
-  - component: {fileID: 4674195292656252909}
+  - component: {fileID: 2277565459084490874}
+  - component: {fileID: 9145033334187848409}
+  - component: {fileID: 2320573584573300962}
+  - component: {fileID: 5587715039871966204}
   m_Layer: 0
   m_Name: Football
   m_TagString: Untagged
@@ -80,7 +83,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &4674195292656252909
+--- !u!64 &2277565459084490874
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196116498769568630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 443fcb03c959e1546807751a77348460, type: 3}
+--- !u!114 &9145033334187848409
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,7 +106,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 4196116498769568630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7356d5f473ec8a49b7c6e6adfaec53a, type: 3}
+  m_Script: {fileID: 11500000, guid: e296fafdfa878c645861e3c6b1f1a7ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelName: Football
+  paintable: {fileID: 0}
+  includeScale: 1
+  activation: 0
+  baseScale: {x: 0, y: 0, z: 0}
+  otherRenderers: []
+  activated: 0
+--- !u!114 &2320573584573300962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196116498769568630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6329a951f597a0488f4e1158c8f8c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot:
+    Index: 0
+    Name: _MainTex
+  coord: 0
+  group:
+    index: 0
+  state: 0
+  stateLimit: 0
+  saveName: Football
+  shaderKeyword: 
+  format: 0
+  mipMaps: 0
+  keepUnpaintable: 1
+  width: 512
+  height: 512
+  color: {r: 1, g: 1, b: 1, a: 1}
+  texture: {fileID: 0}
+  activated: 0
+  current: {fileID: 0}
+  preview: {fileID: 0}
+--- !u!114 &5587715039871966204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196116498769568630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9986da839a92d2d42975bac1e96cd24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  copySplatData: 0
+  activated: 0
