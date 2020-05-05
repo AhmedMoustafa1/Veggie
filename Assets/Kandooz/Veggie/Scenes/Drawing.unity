@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ff1e1bd2a123a4a831f7fbcaa1c226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedID: {fileID: 11400000, guid: c699396367462aa42919cf9b0a81aa6e, type: 2}
+  selectedID: {fileID: 11400000, guid: cba75b2c570a34846912e9765ea55e44, type: 2}
   myDrawables: {fileID: 11400000, guid: d050c3fd5b657be40be0b7158b2b213c, type: 2}
   loadingPosition: {fileID: 1236419698}
 --- !u!4 &1236419698
@@ -1780,7 +1780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236419696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
