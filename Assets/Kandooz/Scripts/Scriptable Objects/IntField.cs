@@ -9,20 +9,19 @@ namespace Kandooz
     public class IntField : ScriptableObject
     {
         [SerializeField]
-        private String modelName;
+        private int value;
 
 
-        public String Value
+        public int Value
         {
             get
             {
-                return modelName;
+                return value;
             }
 
             set
             {
-                this.modelName = value;
-
+                this.value = value;
             }
         }
     }
