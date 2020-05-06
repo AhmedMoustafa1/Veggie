@@ -14,9 +14,13 @@ public class DrawableInfo
 {
     public string name;
     public GameObject model;
-    public bool locked;
+    public RoomCategory roomCategory;
     public string saveName;
+
+    public Vector3 positionInRoom;
+    public Vector3 rotationInRoom;
+    public float scaleInRoom;
+    public float scaleinDrawingScene;
 }
 
-[System.Serializable]
-public enum ObjectType {None};
+

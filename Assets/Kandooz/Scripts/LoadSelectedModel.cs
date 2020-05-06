@@ -6,7 +6,7 @@ using PaintIn3D;
 
 public class LoadSelectedModel : MonoBehaviour
 {
-    public IntField selectedID;
+    public StringField selectedID;
     public Drawables myDrawables;
     public Transform loadingPosition;
 
@@ -24,20 +24,22 @@ public class LoadSelectedModel : MonoBehaviour
         currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.position = loadingPosition.position;
 
-        //add components
-        if(currentModel.GetComponent<MeshCollider>() == null)
-            currentModel.AddComponent<MeshCollider>();
+        currentModel.transform.localScale = currentModel.transform.localScale * myDrawables.drawables[drawableIndex].scaleinDrawingScene;
 
-        if (currentModel.GetComponent<P3dPaintable>() == null)
-            currentModel.AddComponent<P3dPaintable>();
+        if (currentModel.GetComponent<P3dPaintable>())
+        {
+            Destroy(currentModel.GetComponent<Highlighter>());
+            Destroy(currentModel.GetComponent<Selectable>());
+            //currentModel.GetComponent<Highlighter>().enabled = false;
+            //currentModel.GetComponent<Selectable>().enabled = false;
+        }
 
-        if (currentModel.GetComponent<P3dPaintableTexture>() == null)
-            currentModel.AddComponent<P3dPaintableTexture>();
-
-        currentModel.GetComponent<P3dPaintableTexture>().SaveName = myDrawables.drawables[drawableIndex].saveName;
-
-        if (currentModel.GetComponent<P3dMaterialCloner>() == null)
-            currentModel.AddComponent<P3dMaterialCloner>();
+        else
+        {
+            GameObject child = currentModel.GetComponentInChildren<MeshRenderer>().gameObject;
+            Destroy(child.GetComponent<Highlighter>());
+            Destroy(child.GetComponent<Selectable>());
+        }
     }
 
 

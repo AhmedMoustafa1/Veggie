@@ -10,7 +10,7 @@ namespace Kandooz
 
     public class StringField : ScriptableObject
     {
-        public event Action onChange;
+        //public event Action onChange;
         [SerializeField]
         private String value;
         public String Value
@@ -25,10 +25,10 @@ namespace Kandooz
             {
 
                 this.value = value;
-                if (onChange != null)
-                {
-                    onChange();
-                }
+                //if (onChange != null)
+                //{
+                //    onChange();
+                //}
             }
         }
     }

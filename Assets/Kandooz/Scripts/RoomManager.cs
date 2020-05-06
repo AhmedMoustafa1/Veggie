@@ -6,43 +6,31 @@ using PaintIn3D;
 public class RoomManager : MonoBehaviour
 {
     public Drawables myDrawables;
-    public List<GameObject> roomModels;
+    public CurrentRoom currentRoom;
 
     void Start()
     {
-        //SetData();
+        SetData();
     }
+
 
     void SetData()
     {
-        for(int i=0; i<roomModels.Count; i++)
-        {
-            int modelIndex = FindModel(roomModels[i].GetComponent<ModelName>().modelName);
 
-            //add components
-            if (roomModels[i].GetComponent<MeshCollider>() == null)
-                roomModels[i].AddComponent<MeshCollider>();
+        RoomCategory chosenRoom = currentRoom.Value;
 
-            if (roomModels[i].GetComponent<P3dPaintable>() == null)
-                roomModels[i].AddComponent<P3dPaintable>();
-
-            if (roomModels[i].GetComponent<P3dPaintableTexture>() == null)
-                roomModels[i].AddComponent<P3dPaintableTexture>();
-
-            roomModels[i].GetComponent<P3dPaintableTexture>().SaveName = myDrawables.drawables[modelIndex].saveName;
-
-            if (roomModels[i].GetComponent<P3dMaterialCloner>() == null)
-                roomModels[i].AddComponent<P3dMaterialCloner>();
-        }
-    }
-
-    int FindModel(string modelName)
-    {
         for (int i = 0; i < myDrawables.drawables.Count; i++)
         {
-            if (modelName == myDrawables.drawables[i].name)
-                return i;
+            if (myDrawables.drawables[i].roomCategory == chosenRoom)
+            {
+                var currentModel = Instantiate(myDrawables.drawables[i].model);
+
+                currentModel.transform.position = myDrawables.drawables[i].positionInRoom;
+                currentModel.transform.localScale = currentModel.transform.localScale * myDrawables.drawables[i].scaleInRoom;
+                currentModel.transform.rotation = Quaternion.Euler(myDrawables.drawables[i].rotationInRoom);
+
+                currentModel.tag = "selectable";
+            }
         }
-        return 0;
     }
 }
