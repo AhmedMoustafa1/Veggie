@@ -6,21 +6,9 @@ using UnityEngine;
 public class CurrentRoom : ScriptableObject
 {
     [SerializeField]
-    private RoomCategory value;
+    private Drawables roomPaintables;
 
-
-    public RoomCategory Value
-    {
-        get
-        {
-            return value;
-        }
-
-        set
-        {
-            this.value = value;
-        }
-    }
+    public Drawables RoomPaintables { get => roomPaintables; set => roomPaintables = value; }
 }
 
 [System.Serializable]

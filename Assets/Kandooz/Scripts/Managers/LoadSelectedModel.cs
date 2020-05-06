@@ -6,20 +6,22 @@ using PaintIn3D;
 
 public class LoadSelectedModel : MonoBehaviour
 {
-    public StringField selectedID;
-    public Drawables myDrawables;
+    public StringField selectedModel;
+    public CurrentRoom chosenRoom;
     public Transform loadingPosition;
 
+    private Drawables myDrawables;
     private GameObject currentModel;
 
     void Start()
     {
+        myDrawables = chosenRoom.RoomPaintables;
         SetData();
     }
 
     void SetData()
     {
-        int drawableIndex = FindModel(selectedID.Value);
+        int drawableIndex = FindModel(selectedModel.Value);
 
         currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.position = loadingPosition.position;
@@ -30,8 +32,6 @@ public class LoadSelectedModel : MonoBehaviour
         {
             Destroy(currentModel.GetComponent<Highlighter>());
             Destroy(currentModel.GetComponent<Selectable>());
-            //currentModel.GetComponent<Highlighter>().enabled = false;
-            //currentModel.GetComponent<Selectable>().enabled = false;
         }
 
         else
@@ -52,9 +52,4 @@ public class LoadSelectedModel : MonoBehaviour
         }
         return 0;
     }
-
-
-    
-
-    
 }

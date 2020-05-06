@@ -17,21 +17,6 @@ public class LevelsManager : MonoBehaviour
             CreateLevels();
 
     }
-    public void SendRoomData(int categoryNum)
-    {
-        switch (categoryNum)
-        {
-            case 1:
-                currentRoom.Value = RoomCategory.Room1;
-                break;
-            case 2:
-                currentRoom.Value = RoomCategory.Room2;
-                break;
-            default:
-                currentRoom.Value = RoomCategory.Room1;
-                break;
-        }
-    }
 
     public void CreateLevels()
     {
@@ -85,6 +70,9 @@ public class LevelsManager : MonoBehaviour
                 {
                     level.transform.Find("Stars").gameObject.SetActive(false);
                 }
+
+                level.GetComponent<RoomButton>().room = levels.levels[i].drawable;
+
             }
            
         }

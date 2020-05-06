@@ -858,6 +858,7 @@ GameObject:
   - component: {fileID: 8278150115982744589}
   - component: {fileID: 8278150115982745074}
   - component: {fileID: 8278150115982745075}
+  - component: {fileID: 3935259780461706651}
   m_Layer: 5
   m_Name: LevelUnlocked
   m_TagString: Untagged
@@ -942,17 +943,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SendRoomData
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1082,6 +1072,20 @@ MonoBehaviour:
   scene: Room
   duration: 0.5
   color: {r: 0.16078432, g: 0.7725491, b: 0.82745105, a: 1}
+--- !u!114 &3935259780461706651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8278150115982744585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c846ee66a005b6e4884858a3dab5a339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  chosenRoom: {fileID: 11400000, guid: 1ae92c7161f0fd7489d7d3bf4788c991, type: 2}
 --- !u!1 &8278150116306811796
 GameObject:
   m_ObjectHideFlags: 0

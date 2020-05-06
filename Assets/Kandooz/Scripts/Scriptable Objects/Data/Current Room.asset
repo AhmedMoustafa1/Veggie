@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Current Room
   m_EditorClassIdentifier: 
   value: 0
+  RoomPaintables: {fileID: 11400000, guid: 405facbd795c3ca458b6cf13cceffed0, type: 2}
