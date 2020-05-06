@@ -17,7 +17,7 @@ public class LevelScene : MonoBehaviour
 
     public Text levelText;
 
-    private const int numLevelIndexes = 3;
+    private const int numLevelIndexes = 5;
 
     private int m_currentLevelIndex = 0;
 
