@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ee8fd1e6727674dac992027aeb656d, type: 3}
   m_Name: Current Room
   m_EditorClassIdentifier: 
-  value: 0
-  RoomPaintables: {fileID: 11400000, guid: 405facbd795c3ca458b6cf13cceffed0, type: 2}
+  roomPaintables: {fileID: 11400000, guid: d050c3fd5b657be40be0b7158b2b213c, type: 2}
