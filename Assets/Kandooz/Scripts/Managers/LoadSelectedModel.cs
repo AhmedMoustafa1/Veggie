@@ -30,15 +30,14 @@ public class LoadSelectedModel : MonoBehaviour
 
         if (currentModel.GetComponent<P3dPaintable>())
         {
-            Destroy(currentModel.GetComponent<Highlighter>());
             Destroy(currentModel.GetComponent<Selectable>());
         }
 
         else
         {
             GameObject child = currentModel.GetComponentInChildren<MeshRenderer>().gameObject;
-            Destroy(child.GetComponent<Highlighter>());
             Destroy(child.GetComponent<Selectable>());
+            //child.GetComponent<Selectable>().enabled = false;
         }
     }
 

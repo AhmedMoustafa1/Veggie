@@ -16,11 +16,11 @@ GameObject:
   - component: {fileID: 646076154705336080}
   - component: {fileID: 4146562357265642527}
   - component: {fileID: 2260777340418563354}
-  - component: {fileID: 663098952877901312}
   - component: {fileID: 6115718219451627996}
+  - component: {fileID: 2448245783494047584}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,19 +178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelName: Car
---- !u!114 &663098952877901312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3160107947039755220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6a1c67bc996b64482b0bee00328dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightMat: {fileID: 2100000, guid: 89c77de17d9fd3646a12baf919db9195, type: 2}
 --- !u!114 &6115718219451627996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +193,8 @@ MonoBehaviour:
   OnSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 663098952877901312}
-        m_MethodName: Highlight
+      - m_Target: {fileID: 2448245783494047584}
+        m_MethodName: ModelSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -231,8 +218,8 @@ MonoBehaviour:
   OnDeSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 663098952877901312}
-        m_MethodName: UnHighlight
+      - m_Target: {fileID: 2448245783494047584}
+        m_MethodName: ModelUnselected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -242,3 +229,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2448245783494047584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160107947039755220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0f3452eeb3630479e40f7b8cbdde22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0

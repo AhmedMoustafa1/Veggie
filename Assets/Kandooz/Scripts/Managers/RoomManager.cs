@@ -24,8 +24,6 @@ public class RoomManager : MonoBehaviour
             currentModel.transform.position = chosenRoom.drawables[i].positionInRoom;
             currentModel.transform.localScale = currentModel.transform.localScale * chosenRoom.drawables[i].scaleInRoom;
             currentModel.transform.rotation = Quaternion.Euler(chosenRoom.drawables[i].rotationInRoom);
-
-            currentModel.tag = "selectable";
         }
     }
 }

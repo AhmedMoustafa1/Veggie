@@ -17,8 +17,8 @@ GameObject:
   - component: {fileID: 2107489105203319597}
   - component: {fileID: 2107489105203319598}
   - component: {fileID: 4921058897255443456}
-  - component: {fileID: 7632148934483003849}
   - component: {fileID: 8156575182730197553}
+  - component: {fileID: 6862761904506324690}
   m_Layer: 0
   m_Name: Joystick
   m_TagString: selectable
@@ -186,19 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelName: Joystick
---- !u!114 &7632148934483003849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107489105203319585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6a1c67bc996b64482b0bee00328dec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightMat: {fileID: 2100000, guid: 89c77de17d9fd3646a12baf919db9195, type: 2}
 --- !u!114 &8156575182730197553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,8 +201,8 @@ MonoBehaviour:
   OnSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7632148934483003849}
-        m_MethodName: Highlight
+      - m_Target: {fileID: 6862761904506324690}
+        m_MethodName: ModelSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -239,8 +226,8 @@ MonoBehaviour:
   OnDeSelected:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7632148934483003849}
-        m_MethodName: UnHighlight
+      - m_Target: {fileID: 6862761904506324690}
+        m_MethodName: ModelUnselected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -250,6 +237,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6862761904506324690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107489105203319585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0f3452eeb3630479e40f7b8cbdde22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: 0
 --- !u!1 &2107489105250214156
 GameObject:
   m_ObjectHideFlags: 0
