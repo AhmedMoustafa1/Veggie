@@ -10,7 +10,9 @@ public class LoadSelectedModel : MonoBehaviour
     public CurrentRoom chosenRoom;
     public Transform loadingPosition;
 
-    private Drawables myDrawables;
+    public int drawableIndex;
+    public Drawables myDrawables;
+
     private GameObject currentModel;
 
     void Start()
@@ -21,12 +23,14 @@ public class LoadSelectedModel : MonoBehaviour
 
     void SetData()
     {
-        int drawableIndex = FindModel(selectedModel.Value);
+        drawableIndex = FindModel(selectedModel.Value);
 
         currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.position = loadingPosition.position;
 
         currentModel.transform.localScale = currentModel.transform.localScale * myDrawables.drawables[drawableIndex].scaleinDrawingScene;
+
+        myDrawables.drawables[drawableIndex].unlocked = true;
 
         if (currentModel.GetComponent<P3dPaintable>())
         {
@@ -37,7 +41,6 @@ public class LoadSelectedModel : MonoBehaviour
         {
             GameObject child = currentModel.GetComponentInChildren<MeshRenderer>().gameObject;
             Destroy(child.GetComponent<Selectable>());
-            //child.GetComponent<Selectable>().enabled = false;
         }
     }
 

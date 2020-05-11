@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 8023059548700650543}
   - component: {fileID: 7711082535267477638}
   - component: {fileID: 2874955035675919445}
+  - component: {fileID: 3544438588345745055}
   m_Layer: 0
   m_Name: Football
   m_TagString: selectable
@@ -242,3 +243,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &3544438588345745055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196116498769568630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445c8aa571e00e449b6d37169939e923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintableTexture: {fileID: 2320573584573300962}
+  interval: 0
+  registeredPaintableTexture: {fileID: 0}
+  cooldown: -4.286317
+  pending: 0
+  mesh: {fileID: 0}
+  total: 0
+  baked: 0
+  bakedMesh: {fileID: 0}
+  bakedSize: {x: 0, y: 0}
+  bakedPixels: 
+  downsampleSteps: 3
+  threshold: 0.5

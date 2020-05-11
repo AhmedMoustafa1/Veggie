@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &2107489105250214156
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,16 +289,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2107489105250214155}
     m_Modifications:
-    - target: {fileID: 7858120347609559474, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
-        type: 3}
-      propertyPath: m_Name
-      value: Joystick
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858120347609559474, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
-        type: 3}
-      propertyPath: m_TagString
-      value: selectable
-      objectReference: {fileID: 0}
     - target: {fileID: 4134461013786798899, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -352,6 +343,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858120347609559474, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
+        type: 3}
+      propertyPath: m_Name
+      value: Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858120347609559474, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
+        type: 3}
+      propertyPath: m_TagString
+      value: selectable
       objectReference: {fileID: 0}
     - target: {fileID: 530792780361358803, guid: 173d4bf53d25d034eadfea0fa75f0e7b,
         type: 3}

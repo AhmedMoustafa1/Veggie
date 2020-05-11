@@ -13,6 +13,7 @@ public class Drawables : ScriptableObject
 public class DrawableInfo
 {
     public string name;
+    public bool unlocked;
     public GameObject model;
     public RoomCategory roomCategory;
     public string saveName;
@@ -21,6 +22,15 @@ public class DrawableInfo
     public Vector3 rotationInRoom;
     public float scaleInRoom;
     public float scaleinDrawingScene;
+
+    public List<ColorsInfo> colors;
+}
+
+[System.Serializable]
+public class ColorsInfo
+{
+    public string name;
+    public int colorCount;
 }
 
 
