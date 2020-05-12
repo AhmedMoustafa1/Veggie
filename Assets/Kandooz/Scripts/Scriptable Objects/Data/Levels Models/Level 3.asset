@@ -14,10 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawables:
   - name: Burger
+    unlocked: 1
     model: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5, type: 3}
     roomCategory: 0
     saveName: Burger
-    positionInRoom: {x: -4.216995, y: -2.77, z: 0.6833684}
-    rotationInRoom: {x: 0, y: -155.711, z: 0}
-    scaleInRoom: 1
+    positionInRoom: {x: -3.77, y: -2.7, z: 0.11}
+    rotationInRoom: {x: 0, y: 0, z: 0}
+    scaleInRoom: 1.2
     scaleinDrawingScene: 2
+    colors: []
+  - name: Donut
+    unlocked: 1
+    model: {fileID: 3677889388112875546, guid: 8393ff912dd6bca46a0da703cc25744d, type: 3}
+    roomCategory: 0
+    saveName: Donut
+    positionInRoom: {x: 1.065489, y: -2.68, z: -0.8252988}
+    rotationInRoom: {x: -26.696, y: -95.411, z: -0.24}
+    scaleInRoom: 1
+    scaleinDrawingScene: 1.7
+    colors: []
+  - name: Watermelon
+    unlocked: 1
+    model: {fileID: 9216306753950885516, guid: 1cb48c9691e15ef4aa7d4c57d73e023f, type: 3}
+    roomCategory: 0
+    saveName: Watermelon
+    positionInRoom: {x: -1.66, y: -2.69, z: 0.08000004}
+    rotationInRoom: {x: 0, y: -11.253, z: 0}
+    scaleInRoom: 1.2
+    scaleinDrawingScene: 1.7
+    colors: []
