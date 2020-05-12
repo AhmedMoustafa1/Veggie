@@ -9,7 +9,7 @@ public class LoadSelectedModel : MonoBehaviour
     public StringField selectedModel;
     public CurrentRoom chosenRoom;
     public Transform loadingPosition;
-
+    public GameObject paintableParent;
     public int drawableIndex;
     public Drawables myDrawables;
 
@@ -26,6 +26,7 @@ public class LoadSelectedModel : MonoBehaviour
         drawableIndex = FindModel(selectedModel.Value);
 
         currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
+        currentModel.transform.parent = paintableParent.transform;
         currentModel.transform.position = loadingPosition.position;
 
         currentModel.transform.localScale = currentModel.transform.localScale * myDrawables.drawables[drawableIndex].scaleinDrawingScene;
