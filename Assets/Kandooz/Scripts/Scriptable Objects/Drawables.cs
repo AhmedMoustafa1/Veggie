@@ -15,7 +15,7 @@ public class DrawableInfo
     public string name;
     public bool unlocked;
     public GameObject model;
-    public RoomCategory roomCategory;
+    public Sprite modelSprite;
     public string saveName;
 
     public Vector3 positionInRoom;

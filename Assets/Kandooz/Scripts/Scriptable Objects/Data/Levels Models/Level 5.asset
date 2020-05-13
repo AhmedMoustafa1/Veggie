@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawables:
   - name: Football
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 4196116498769568630, guid: 6423eb512c819f143a5bf0de6ee5b793, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Football
     positionInRoom: {x: -0.17, y: -2.78, z: -0.52}
     rotationInRoom: {x: 0, y: 62.638, z: 0}
@@ -24,9 +24,9 @@ MonoBehaviour:
     scaleinDrawingScene: 2
     colors: []
   - name: Tennis
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 6948457730538439353, guid: c2e87a8e326b0e34bbaa9bfd80e8e3ea, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Tennis
     positionInRoom: {x: -2.54, y: -2.8, z: 0.06}
     rotationInRoom: {x: 0, y: 0, z: 0}

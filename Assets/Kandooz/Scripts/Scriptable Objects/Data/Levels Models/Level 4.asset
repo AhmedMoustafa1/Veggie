@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawables:
   - name: Joystick
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 2107489105250214156, guid: 95e89c9dccbbe5b4dba7020b3dbc65eb, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Joystick
     positionInRoom: {x: -1.547323, y: -2.73, z: 0.04384759}
     rotationInRoom: {x: 3.778, y: -154.167, z: 0}
@@ -24,9 +24,9 @@ MonoBehaviour:
     scaleinDrawingScene: 2
     colors: []
   - name: Gameboy
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 3965074884664152500, guid: eea822a61fa829a4fa824cc044ed9d6e, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Gameboy
     positionInRoom: {x: 0.31, y: -2.69, z: -1.03}
     rotationInRoom: {x: 0, y: -123.548, z: 0}
@@ -34,9 +34,9 @@ MonoBehaviour:
     scaleinDrawingScene: 1.6
     colors: []
   - name: Monkey
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 7478161368881219686, guid: f630a8e7c5f133341900cbf54d4d9d36, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Monkey
     positionInRoom: {x: -3.669276, y: -2.718132, z: 0.5248409}
     rotationInRoom: {x: 1.206, y: -216.207, z: -0.883}

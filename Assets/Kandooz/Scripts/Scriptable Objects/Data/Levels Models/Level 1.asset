@@ -14,29 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drawables:
   - name: Computer
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 7989115440470433013, guid: d5c5de2bd60b65b44bc6af9ef9484c98, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 21300000, guid: 25ef9336331caac4a82de6d0855ded71, type: 3}
     saveName: Computer
     positionInRoom: {x: 0.92, y: -2.76, z: -0.96}
     rotationInRoom: {x: 0, y: -144.5, z: 0}
     scaleInRoom: 1
     scaleinDrawingScene: 1.4
-    colors: []
+    colors:
+    - name: Grey
+      colorCount: 16072
+    - name: Black
+      colorCount: 5376
   - name: Radio
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 6800771005001216770, guid: bdce72518b68a8847a9204146e8c96bf, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 21300000, guid: 4c96e59726db64742915054a0fe2dd96, type: 3}
     saveName: Radio
     positionInRoom: {x: -0.57, y: -2.79, z: 0.42}
     rotationInRoom: {x: 0, y: -121.452, z: 0}
     scaleInRoom: 1
     scaleinDrawingScene: 1.4
-    colors: []
+    colors:
+    - name: Pink
+      colorCount: 12360
+    - name: Blue
+      colorCount: 6032
+    - name: Black
+      colorCount: 528
   - name: Sneakers
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 7722280507937081523, guid: acb7656307415dc4dbc818eb60824735, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Sneakers
     positionInRoom: {x: -2.5, y: -2.986843, z: 0.45}
     rotationInRoom: {x: -16.973, y: -215.301, z: 2.295}
@@ -44,9 +54,9 @@ MonoBehaviour:
     scaleinDrawingScene: 1.7
     colors: []
   - name: Headphone
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 4092571509499809395, guid: 59e6d25695264624c8647f753f527b14, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Headphone
     positionInRoom: {x: -4.2, y: -2.75, z: 0.62}
     rotationInRoom: {x: 0, y: -242.401, z: 0}

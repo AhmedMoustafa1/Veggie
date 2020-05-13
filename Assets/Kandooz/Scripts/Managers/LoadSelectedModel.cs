@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using PaintIn3D;
 
 public class LoadSelectedModel : MonoBehaviour
 {
     public StringField selectedModel;
     public CurrentRoom chosenRoom;
+    public Image modelImg;
     public Transform loadingPosition;
     public GameObject paintableParent;
     public int drawableIndex;
@@ -25,13 +27,17 @@ public class LoadSelectedModel : MonoBehaviour
     {
         drawableIndex = FindModel(selectedModel.Value);
 
+        GetComponent<PaintingManager>().LateStart();
+
         currentModel = Instantiate(myDrawables.drawables[drawableIndex].model);
         currentModel.transform.parent = paintableParent.transform;
         currentModel.transform.position = loadingPosition.position;
 
         currentModel.transform.localScale = currentModel.transform.localScale * myDrawables.drawables[drawableIndex].scaleinDrawingScene;
 
-        myDrawables.drawables[drawableIndex].unlocked = true;
+        modelImg.sprite = myDrawables.drawables[drawableIndex].modelSprite;
+
+
 
         if (currentModel.GetComponent<P3dPaintable>())
         {

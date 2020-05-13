@@ -16,27 +16,41 @@ MonoBehaviour:
   - name: Burger
     unlocked: 1
     model: {fileID: 1013937895556069285, guid: d8eac485a244c4e488b003bf72e94cc5, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 21300000, guid: f6287851d15c6ba419295f55d82a5ff7, type: 3}
     saveName: Burger
     positionInRoom: {x: -3.77, y: -2.7, z: 0.11}
     rotationInRoom: {x: 0, y: 0, z: 0}
     scaleInRoom: 1.2
     scaleinDrawingScene: 2
-    colors: []
+    colors:
+    - name: Orange
+      colorCount: 7384
+    - name: LightBrown
+      colorCount: 1152
+    - name: Green
+      colorCount: 344
+    - name: Yellow
+      colorCount: 1496
+    - name: Brown
+      colorCount: 760
   - name: Donut
     unlocked: 1
     model: {fileID: 3677889388112875546, guid: 8393ff912dd6bca46a0da703cc25744d, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 21300000, guid: c0856742f68acdf4dbede1a01c45a5dc, type: 3}
     saveName: Donut
-    positionInRoom: {x: 1.065489, y: -2.68, z: -0.8252988}
-    rotationInRoom: {x: -26.696, y: -95.411, z: -0.24}
+    positionInRoom: {x: 1.324275, y: -2.718618, z: -0.80044}
+    rotationInRoom: {x: -5.025, y: -95.50001, z: -0.215}
     scaleInRoom: 1
     scaleinDrawingScene: 1.7
-    colors: []
+    colors:
+    - name: Pink
+      colorCount: 8936
+    - name: Orange
+      colorCount: 9992
   - name: Watermelon
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 9216306753950885516, guid: 1cb48c9691e15ef4aa7d4c57d73e023f, type: 3}
-    roomCategory: 0
+    modelSprite: {fileID: 0}
     saveName: Watermelon
     positionInRoom: {x: -1.66, y: -2.69, z: 0.08000004}
     rotationInRoom: {x: 0, y: -11.253, z: 0}
