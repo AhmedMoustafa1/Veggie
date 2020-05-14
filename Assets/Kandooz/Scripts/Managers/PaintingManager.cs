@@ -32,7 +32,7 @@ public class PaintingManager : MonoBehaviour
             {
                 if (colorsInfo[i].name == colors[j].name)
                 {
-                    if (colorsInfo[i].colorCount + 400 > colors[j].Solid && colors[j].Solid >= colorsInfo[i].colorCount || colorsInfo[i].colorCount >= colors[j].Solid && colors[j].Solid > colorsInfo[i].colorCount-400)
+                    if (colorsInfo[i].colorCount + 1000 > colors[j].Solid && colors[j].Solid >= colorsInfo[i].colorCount || colorsInfo[i].colorCount >= colors[j].Solid && colors[j].Solid > colorsInfo[i].colorCount-1000)
                         colorDone.Add(true);
                     else
                         colorDone.Add(false);

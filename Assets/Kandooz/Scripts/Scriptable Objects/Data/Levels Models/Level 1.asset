@@ -38,11 +38,11 @@ MonoBehaviour:
     scaleinDrawingScene: 1.4
     colors:
     - name: Pink
-      colorCount: 12360
+      colorCount: 11632
     - name: Blue
-      colorCount: 6032
+      colorCount: 6500
     - name: Black
-      colorCount: 528
+      colorCount: 480
   - name: Sneakers
     unlocked: 0
     model: {fileID: 7722280507937081523, guid: acb7656307415dc4dbc818eb60824735, type: 3}
