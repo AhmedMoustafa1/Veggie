@@ -21,7 +21,7 @@ MonoBehaviour:
     unlocked: {fileID: 8278150115982744585, guid: c6303e72fb30f93458b9c3b1a3fa636d,
       type: 3}
     adWatched: 1
-    levelCompleted: 1
+    levelCompleted: 0
     drawable: {fileID: 11400000, guid: d050c3fd5b657be40be0b7158b2b213c, type: 2}
   - levelName: Cars
     levelId: 2
@@ -30,7 +30,7 @@ MonoBehaviour:
       type: 3}
     unlocked: {fileID: 8278150115982744585, guid: c6303e72fb30f93458b9c3b1a3fa636d,
       type: 3}
-    adWatched: 1
+    adWatched: 0
     levelCompleted: 0
     drawable: {fileID: 11400000, guid: d222737fd68eb054fbb111ee491e7f15, type: 2}
   - levelName: Food
