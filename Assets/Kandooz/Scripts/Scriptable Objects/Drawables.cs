@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Drawables : ScriptableObject
 {
+    public int level;
     public List<DrawableInfo> drawables;
 }
 

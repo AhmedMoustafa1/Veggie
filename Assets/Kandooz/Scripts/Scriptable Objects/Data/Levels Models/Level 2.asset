@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370e1a2b762ed764fa743dd366518420, type: 3}
   m_Name: Level 2
   m_EditorClassIdentifier: 
+  level: 2
   drawables:
   - name: Car
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 4931403496586486719, guid: 1715ee29ad0c1f04fb26cdb626353030, type: 3}
     modelSprite: {fileID: 0}
     saveName: Car

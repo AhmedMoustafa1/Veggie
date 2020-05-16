@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using Kandooz;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,11 +13,20 @@ public class LevelsManager : MonoBehaviour
     public List<GameObject> LevelHolders;
 
     public Levels levels;
-
     public void Awake()
     {
             CreateLevels();
 
+    }
+    public  void ClearLevels()
+    {
+        for (int i = 0; i < LevelHolders.Count; i++)
+        {
+            for (int j = 0; j < LevelHolders[i].transform.childCount; j++)
+            {
+                Destroy(LevelHolders[i].transform.GetChild(j).gameObject);
+            }
+        }
     }
 
     public void CreateLevels()
@@ -24,14 +35,23 @@ public class LevelsManager : MonoBehaviour
         for (int i = 0; i < levels.levels.Length; i++)
         {
             GameObject levelButton;
-            if (i >0 &&!levels.levels[i].adWatched && !levels.levels[i-1].levelCompleted)
-            {
-                levelButton = levels.levels[i].locked;
-            }
-            else
+
+            if (i ==0 || (levels.levels[i].adWatched && levels.levels[i - 1].levelCompleted))
             {
                 levelButton = levels.levels[i].unlocked;
+
             }
+            else if (levels.levels[i - 1].levelCompleted &&!levels.levels[i].adWatched)
+            {
+                levelButton = levels.levels[i].watchAd;
+            }
+
+            else
+            {
+
+                levelButton = levels.levels[i].locked;
+            }
+      
 
             GameObject level;
             if (i<=9)
@@ -72,10 +92,36 @@ public class LevelsManager : MonoBehaviour
                 }
 
                 level.GetComponent<RoomButton>().room = levels.levels[i].drawable;
+               level.GetComponent<RoomButton>().roomNumber = i;
+            }
+            if (levelButton == levels.levels[i].watchAd)
+            {
+                level.GetComponent<RoomButton>().roomNumber = i;
 
             }
-           
+
         }
 
+    }
+
+
+    public void SetupLevel()
+    {
+        ClearLevels();
+        CreateLevels();
+
+    }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            ClearLevels();
+
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            CreateLevels();
+
+        }
     }
 }

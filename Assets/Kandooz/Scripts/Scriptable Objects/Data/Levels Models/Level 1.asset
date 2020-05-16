@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370e1a2b762ed764fa743dd366518420, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
+  level: 1
   drawables:
   - name: Computer
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 7989115440470433013, guid: d5c5de2bd60b65b44bc6af9ef9484c98, type: 3}
     modelSprite: {fileID: 21300000, guid: 25ef9336331caac4a82de6d0855ded71, type: 3}
     saveName: Computer
@@ -28,7 +29,7 @@ MonoBehaviour:
     - name: Black
       colorCount: 5376
   - name: Radio
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 6800771005001216770, guid: bdce72518b68a8847a9204146e8c96bf, type: 3}
     modelSprite: {fileID: 21300000, guid: 4c96e59726db64742915054a0fe2dd96, type: 3}
     saveName: Radio
@@ -44,7 +45,7 @@ MonoBehaviour:
     - name: Black
       colorCount: 480
   - name: Sneakers
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 7722280507937081523, guid: acb7656307415dc4dbc818eb60824735, type: 3}
     modelSprite: {fileID: 0}
     saveName: Sneakers
@@ -54,7 +55,7 @@ MonoBehaviour:
     scaleinDrawingScene: 1.7
     colors: []
   - name: Headphone
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 4092571509499809395, guid: 59e6d25695264624c8647f753f527b14, type: 3}
     modelSprite: {fileID: 0}
     saveName: Headphone

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370e1a2b762ed764fa743dd366518420, type: 3}
   m_Name: Level 4
   m_EditorClassIdentifier: 
+  level: 4
   drawables:
   - name: Joystick
     unlocked: 0
