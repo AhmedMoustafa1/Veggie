@@ -36,31 +36,27 @@ MonoBehaviour:
     positionInRoom: {x: -0.57, y: -2.79, z: 0.42}
     rotationInRoom: {x: 0, y: -121.452, z: 0}
     scaleInRoom: 1
-    scaleinDrawingScene: 1.4
+    scaleinDrawingScene: 1.6
     colors:
     - name: Pink
-      colorCount: 11632
+      colorCount: 12280
     - name: Blue
-      colorCount: 6500
+      colorCount: 8224
     - name: Black
-      colorCount: 480
-  - name: Sneakers
-    unlocked: 1
-    model: {fileID: 7722280507937081523, guid: acb7656307415dc4dbc818eb60824735, type: 3}
-    modelSprite: {fileID: 0}
-    saveName: Sneakers
-    positionInRoom: {x: -2.5, y: -2.986843, z: 0.45}
-    rotationInRoom: {x: -16.973, y: -215.301, z: 2.295}
-    scaleInRoom: 1
-    scaleinDrawingScene: 1.7
-    colors: []
+      colorCount: 1432
   - name: Headphone
     unlocked: 1
     model: {fileID: 4092571509499809395, guid: 59e6d25695264624c8647f753f527b14, type: 3}
-    modelSprite: {fileID: 0}
+    modelSprite: {fileID: 21300000, guid: bc4f644ef0a4f3c4fb3c812471255cc0, type: 3}
     saveName: Headphone
-    positionInRoom: {x: -4.2, y: -2.75, z: 0.62}
+    positionInRoom: {x: -4.2, y: -2.621, z: 0.62}
     rotationInRoom: {x: 0, y: -242.401, z: 0}
     scaleInRoom: 1
     scaleinDrawingScene: 2
-    colors: []
+    colors:
+    - name: Red
+      colorCount: 664
+    - name: Black
+      colorCount: 4920
+    - name: lightGreen
+      colorCount: 11464

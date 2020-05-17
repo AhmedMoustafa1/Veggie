@@ -10,7 +10,7 @@ public class WatchAd : MonoBehaviour
     public GameEvent UpdateLevel;
     public void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         gameLevels.levels[0].AdWatched = true;
     }
     // Start is called before the first frame update

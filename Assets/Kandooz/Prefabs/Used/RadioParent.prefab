@@ -47,7 +47,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5739397812478771891}
-  m_Mesh: {fileID: -2432090755550338912, guid: 10690ed2507abd64bb9058d3acc128e5, type: 3}
+  m_Mesh: {fileID: -7295670261829872702, guid: ee523cfb373573f4299c354f7ae2f239, type: 2}
 --- !u!23 &6420208208058165201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
   paintableTexture: {fileID: 1809074013818960068}
   interval: 0
   registeredPaintableTexture: {fileID: 1809074013818960068}
-  cooldown: -4.3818846
+  cooldown: -4.3076406
   pending: 0
   mesh: {fileID: 0}
   total: 0

@@ -22,16 +22,16 @@ MonoBehaviour:
     positionInRoom: {x: -3.77, y: -2.7, z: 0.11}
     rotationInRoom: {x: 0, y: 0, z: 0}
     scaleInRoom: 1.2
-    scaleinDrawingScene: 2
+    scaleinDrawingScene: 2.3
     colors:
     - name: Orange
-      colorCount: 7384
+      colorCount: 8304
     - name: LightBrown
-      colorCount: 1152
+      colorCount: 2112
     - name: Green
-      colorCount: 344
+      colorCount: 416
     - name: Yellow
-      colorCount: 1496
+      colorCount: 1512
     - name: Brown
       colorCount: 760
   - name: Donut
@@ -48,13 +48,3 @@ MonoBehaviour:
       colorCount: 8936
     - name: Orange
       colorCount: 9992
-  - name: Watermelon
-    unlocked: 0
-    model: {fileID: 9216306753950885516, guid: 1cb48c9691e15ef4aa7d4c57d73e023f, type: 3}
-    modelSprite: {fileID: 0}
-    saveName: Watermelon
-    positionInRoom: {x: -1.66, y: -2.69, z: 0.08000004}
-    rotationInRoom: {x: 0, y: -11.253, z: 0}
-    scaleInRoom: 1.2
-    scaleinDrawingScene: 1.7
-    colors: []
