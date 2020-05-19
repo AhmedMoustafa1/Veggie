@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 2260777340418563354}
   - component: {fileID: 6115718219451627996}
   - component: {fileID: 2448245783494047584}
+  - component: {fileID: 1661791595167842353}
+  - component: {fileID: 6824860310310755704}
   m_Layer: 0
   m_Name: Car
   m_TagString: selectable
@@ -46,7 +48,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3160107947039755220}
-  m_Mesh: {fileID: -2432090755550338912, guid: 3da7608662c59ca489a67deb4bf7a168, type: 3}
+  m_Mesh: {fileID: -2432090755550338912, guid: 03102166956d0254685b8a2d5f400312, type: 3}
 --- !u!23 &6233364051037288257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -242,3 +244,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+  originalScale: {x: 0, y: 0, z: 0}
+--- !u!114 &1661791595167842353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160107947039755220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6329a951f597a0488f4e1158c8f8c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot:
+    Index: 0
+    Name: _MainTex
+  coord: 0
+  group:
+    index: 0
+  state: 0
+  stateLimit: 0
+  saveName: 
+  shaderKeyword: 
+  format: 0
+  mipMaps: 0
+  keepUnpaintable: 1
+  width: 512
+  height: 512
+  color: {r: 1, g: 1, b: 1, a: 1}
+  texture: {fileID: 0}
+  activated: 0
+  current: {fileID: 0}
+  preview: {fileID: 0}
+--- !u!114 &6824860310310755704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160107947039755220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9986da839a92d2d42975bac1e96cd24c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  copySplatData: 0
+  activated: 0

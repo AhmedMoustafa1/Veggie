@@ -33,11 +33,7 @@ MonoBehaviour:
     rotationInRoom: {x: -2.972, y: -76.52901, z: -6.576}
     scaleInRoom: 1.4
     scaleinDrawingScene: 2
-    colors:
-    - name: Black
-      colorCount: 6376
-    - name: Cyan
-      colorCount: 9456
+    colors: []
   - name: Plane
     unlocked: 1
     model: {fileID: 7654925732326394308, guid: 788533c6f74e9784c9386127eda65383, type: 3}

@@ -35,7 +35,7 @@ MonoBehaviour:
     scaleinDrawingScene: 1.6
     colors: []
   - name: Monkey
-    unlocked: 0
+    unlocked: 1
     model: {fileID: 7478161368881219686, guid: f630a8e7c5f133341900cbf54d4d9d36, type: 3}
     modelSprite: {fileID: 0}
     saveName: Monkey
