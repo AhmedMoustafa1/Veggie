@@ -14,16 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 2
   drawables:
-  - name: Car
-    unlocked: 1
-    model: {fileID: 4931403496586486719, guid: 1715ee29ad0c1f04fb26cdb626353030, type: 3}
-    modelSprite: {fileID: 0}
-    saveName: Car
-    positionInRoom: {x: -4.0295, y: -2.76, z: 0.8387}
-    rotationInRoom: {x: 0, y: 158.217, z: 0}
-    scaleInRoom: 1.5
-    scaleinDrawingScene: 2.5
-    colors: []
   - name: Bike
     unlocked: 1
     model: {fileID: 7083602662814510220, guid: db1b0c9d3fc2a674a92f348907d78d67, type: 3}
@@ -33,7 +23,11 @@ MonoBehaviour:
     rotationInRoom: {x: -2.972, y: -76.52901, z: -6.576}
     scaleInRoom: 1.4
     scaleinDrawingScene: 2
-    colors: []
+    colors:
+    - name: Black
+      colorCount: 6376
+    - name: Cyan
+      colorCount: 9456
   - name: Plane
     unlocked: 1
     model: {fileID: 7654925732326394308, guid: 788533c6f74e9784c9386127eda65383, type: 3}
