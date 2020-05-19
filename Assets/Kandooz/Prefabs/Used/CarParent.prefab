@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paintableTexture: {fileID: 3033398360521789218}
   interval: 0
-  registeredPaintableTexture: {fileID: 0}
-  cooldown: -5.647365
+  registeredPaintableTexture: {fileID: 3033398360521789218}
+  cooldown: -6.7267265
   pending: 0
   mesh: {fileID: 0}
   total: 0
@@ -128,6 +128,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: selectable
       objectReference: {fileID: 0}
+    - target: {fileID: 3432861520719584177, guid: 338f0fce17edc4d4f913201a0fbdbf91,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2447977805930132777, guid: 30c4ba93d49186344a8a6851a639631b,
+        type: 2}
     - target: {fileID: 646076154705336082, guid: 338f0fce17edc4d4f913201a0fbdbf91,
         type: 3}
       propertyPath: saveName
