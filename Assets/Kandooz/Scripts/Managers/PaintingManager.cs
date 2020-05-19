@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using Kandooz;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class PaintingManager : MonoBehaviour
@@ -13,7 +15,8 @@ public class PaintingManager : MonoBehaviour
     private int currentIndex;
 
     private List<bool> colorDone;
-
+    public PopupOpener win;
+    public PopupOpener loose;
 
     public void LateStart()
     {
@@ -47,6 +50,8 @@ public class PaintingManager : MonoBehaviour
             {
                 Debug.Log("NOT MATCH");
                 matchingTxt.text = "Try Again";
+                loose.OpenPopup();
+
                 StartCoroutine(wait());
                 return;
             }
@@ -55,6 +60,8 @@ public class PaintingManager : MonoBehaviour
         myDrawables.drawables[currentIndex].unlocked = true;
         Debug.Log("Match");
         matchingTxt.text = "Well Done";
+
+        win.OpenPopup();
         StartCoroutine(wait());
     }
 
