@@ -15,7 +15,7 @@ MonoBehaviour:
   level: 2
   drawables:
   - name: Bike
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 7083602662814510220, guid: db1b0c9d3fc2a674a92f348907d78d67, type: 3}
     modelSprite: {fileID: 21300000, guid: 90b723cf6767ffe418ce251bfc60309b, type: 3}
     saveName: Bike
