@@ -22,7 +22,7 @@ MonoBehaviour:
     positionInRoom: {x: 0.4044178, y: -2.82, z: -1.014754}
     rotationInRoom: {x: -2.972, y: -76.52901, z: -6.576}
     scaleInRoom: 1.4
-    scaleinDrawingScene: 2
+    scaleinDrawingScene: 2.3
     colors:
     - name: Black
       colorCount: 6376
