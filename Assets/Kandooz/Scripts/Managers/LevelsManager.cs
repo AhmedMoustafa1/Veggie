@@ -15,6 +15,7 @@ public class LevelsManager : MonoBehaviour
     public Levels levels;
     public void Awake()
     {
+
             CreateLevels();
 
     }
@@ -36,12 +37,12 @@ public class LevelsManager : MonoBehaviour
         {
             GameObject levelButton;
 
-            if (i ==0 || (levels.levels[i].adWatched && levels.levels[i - 1].levelCompleted))
+            if (i ==0 || (levels.levels[i].AdWatched && levels.levels[i - 1].LevelCompleted))
             {
                 levelButton = levels.levels[i].unlocked;
 
             }
-            else if (levels.levels[i - 1].levelCompleted &&!levels.levels[i].adWatched)
+            else if (levels.levels[i - 1].LevelCompleted &&!levels.levels[i].AdWatched)
             {
                 levelButton = levels.levels[i].watchAd;
             }

@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class Levels : ScriptableObject
 {
-    [SerializeField]public Level[] levels;
+    [SerializeField] public Level[] levels;
 
 
 }
- [System.Serializable]
+[System.Serializable]
 public class Level
 {
     public string levelName;
@@ -21,7 +21,7 @@ public class Level
 
     public GameObject unlocked;
 
-    public bool adWatched= false;
+    public bool adWatched = false;
     public bool AdWatched
     {
         get
@@ -48,22 +48,33 @@ public class Level
 
         set
         {
+
+
+            if (PlayerPrefs.HasKey("Level ad" + levelId))
+            {
+                if (PlayerPrefs.GetInt("Level ad" + levelId) == 1)
+                {
+                    return;
+
+                }
+            }
+            this.adWatched = value;
+
             PlayerPrefs.SetInt("Level ad" + levelId, adWatched ? 1 : 0);
             PlayerPrefs.Save();
 
-            this.adWatched = value;
         }
     }
 
 
-    public bool levelCompleted=false;
+    public bool levelCompleted = false;
     public bool LevelCompleted
     {
         get
         {
             if (PlayerPrefs.HasKey("Level complete" + levelId))
             {
-                if (PlayerPrefs.GetInt("Level complete" + levelId)==1)
+                if (PlayerPrefs.GetInt("Level complete" + levelId) == 1)
                 {
                     levelCompleted = true;
 
@@ -83,10 +94,20 @@ public class Level
 
         set
         {
+
+            if (PlayerPrefs.HasKey("Level complete" + levelId))
+            {
+                if (PlayerPrefs.GetInt("Level complete" + levelId) == 1)
+                {
+                    return;
+
+                }
+            }
+            this.levelCompleted = value;
+
             PlayerPrefs.SetInt("Level complete" + levelId, levelCompleted ? 1 : 0);
             PlayerPrefs.Save();
 
-            this.levelCompleted = value;
         }
     }
     public Drawables drawable;

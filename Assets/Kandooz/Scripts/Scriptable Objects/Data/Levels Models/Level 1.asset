@@ -15,7 +15,7 @@ MonoBehaviour:
   level: 1
   drawables:
   - name: Computer
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 7989115440470433013, guid: d5c5de2bd60b65b44bc6af9ef9484c98, type: 3}
     modelSprite: {fileID: 21300000, guid: 25ef9336331caac4a82de6d0855ded71, type: 3}
     saveName: Computer
@@ -29,7 +29,7 @@ MonoBehaviour:
     - name: Black
       colorCount: 5376
   - name: Radio
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 6800771005001216770, guid: bdce72518b68a8847a9204146e8c96bf, type: 3}
     modelSprite: {fileID: 21300000, guid: 4c96e59726db64742915054a0fe2dd96, type: 3}
     saveName: Radio
@@ -45,7 +45,7 @@ MonoBehaviour:
     - name: Black
       colorCount: 1432
   - name: Headphone
-    unlocked: 1
+    unlocked: 0
     model: {fileID: 4092571509499809395, guid: 59e6d25695264624c8647f753f527b14, type: 3}
     modelSprite: {fileID: 21300000, guid: bc4f644ef0a4f3c4fb3c812471255cc0, type: 3}
     saveName: Headphone
